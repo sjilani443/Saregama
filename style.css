@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  /* background-color: wheat; */
+  box-sizing: border-box;
+}
+.body {
+  height: 100%;
+  width: 100%;
+  background-color: #040f16;
+  color: #edf2f4;
+}
+.nav {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logo img {
+  height: 150px;
+  width: 150px;
+}
+.nav button {
+  cursor: pointer;
+  color: #edf2f4;
+}
+.searchbar {
+  height: 10vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.searchbar input {
+  width: 100%;
+  height: 5vh;
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px solid white;
+  color: black;
+}
+.sub button {
+  padding: 8px;
+  background-color: white;
+  color: black;
+  border: none;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 15px;
+}
+.sub button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+.login button {
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+button:hover {
+  background-color: white;
+  color: #040f16;
+  font-weight: 400;
+}
+
+.main {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  /* flex-wrap: nowrap; */
+  /* display: none; */
+}
+
+.sidebar {
+  padding: 15px;
+  width: 15%;
+  height: 90vh;
+  /* background-color:#040F16; */
+  background-color: rgba(42, 42, 43, 0.481);
+  color: #dfdedadd;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+  border-radius: 7px;
+}
+.options {
+  height: 60%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar button {
+  padding: 4px;
+  font-size: 15px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #dfdedadd;
+}
+.sidebar button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f3efe06b;
+  gap: 5px;
+}
+.logout {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.main-body {
+  width: 85%;
+  height: 90%;
+  background-color: #005d7c31;
+  color: white;
+  border-radius: 8px;
+  overflow-y: scroll;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* display: none; */
+ 
+}
+
+.foryou {
+  margin: 5px;
+  width: 98%;
+  height: 250px;
+  background-color: rgba(7, 7, 7, 0.733);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 13px;
+  gap: 5px;
+  border-radius: 4px;
+}
+.foryou > p {
+  margin-left: 45px;
+  font-weight: 1000;
+}
+
+.cardcontainer {
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  padding: 5px 8px;
+  width: 120px;
+  background-color: rgb(52, 54, 55);
+  border-radius: 5px;
+  gap: 8px;
+  font-size: 14px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  height: 80%;
+  width: 100%;
+  object-fit: contain;
+}
+.card .icon{
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #0e0e0e00;
+  transition: all ease-in-out 0.5s;
+}
+.icon i {
+  position: absolute;
+  top: 30%;
+}
+
+.card a,.maincard a {
+  position: absolute;
+  display: none;
+}
+.card:hover,.maincard:hover
+{
+  background-color: rgba(0, 0, 0, 0.99);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  display: flex;
+  color: white;
+  /* background-color: aliceblue; */
+}
+
+.playbar {
+  width: 82%;
+  height: 15vh;
+  border-radius: 30px;
+  background-color: #585b5c;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+  /* align-items: ; */
+  position: fixed;
+  bottom: 10px;
+  background-color: rgba(31, 30, 30, 0.929);
+  transition: all 0.2s ease-in-out;
+  
+}
+.playbar-options {
+  display: flex;
+  width: 97%;
+  justify-content: space-evenly;
+  padding: 20px;
+  align-items: center;
+  font-size: 30px;
+}
+.seekbar {
+  height: 5px;
+  width: 98%;
+  /* border: 2px solid rgb(0, 0, 0); */
+  background-color: #040f16;
+  position: relative;
+  bottom: 5px;
+  left: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 100px;
+  background-color: white;
+  position: relative;
+  bottom: 8px;
+  left: 0%;
+  transition: all ease-in-out 0.2s;
+}
+.playbar .songinfo {
+  font-size: 20px;
+  width: 20%;
+  font-family: Baskerville Old Face;
+}
+.playbar .songimg img {
+  height: 50px;
+  width: 50px;
+  display: flex;
+}
+.play-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  width: 65%;
+  cursor: pointer;
+}
+.buttons
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+}
+.volume
+{
+  font-size: 20px;
+  gap:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: all ease-in-out 2s; */
+}
+.volume input
+{
+  /* width: 20px; */
+  height: 5px;
+
+}
+
+.albums {
+  width: 80%;
+  height: 90%;
+  background-color: #005d7c31;
+  color: white;
+  border-radius: 8px;
+  overflow-y: scroll;
+  position: relative;
+  display: none; /* Initially hide the albums */
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.albums img
+{
+  height: 100px;
+  width: 100px;
+}
+
+.albums a{
+  display: none;
+}
+
+.album
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.album div
+{
+  width: 100%;
+  height: 40vh;
+  /* background-color: aliceblue; */
+  border: 2px solid white;
+  color: black;
+  margin: 10px;
+  overflow: hidden;
+}
+.divs
+{
+  background-color: aqua;
+}
+
+
+
